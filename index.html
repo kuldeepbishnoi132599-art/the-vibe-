@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>The Vibe Thread — Wear Your Vibe</title>
+  <meta name="description" content="The Vibe Thread — interactive, affordable t-shirts with QR & AR prints. Teen-focused, modern designs.">
+  <style>
+    :root{
+      --bg:#f8fafc; --card:#ffffff; --accent:#ff6b6b; --muted:#4b5563; --glass: rgba(255,255,255,0.6);
+      --maxw:1100px; --radius:16px; font-family:Inter,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:#1f2937;display:flex;justify-content:center;padding:32px}
+    .wrap{width:100%;max-width:var(--maxw)}
+    header{display:flex;align-items:center;justify-content:space-between;margin-bottom:24px}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:54px;height:54px;background:linear-gradient(135deg,#ff6b6b,#ffd166);border-radius:12px;display:flex;align-items:center;justify-content:center;font-weight:800;color:#102;box-shadow:0 6px 18px rgba(0,0,0,0.2)}
+    nav a{color:var(--muted);text-decoration:none;margin-left:18px}
+    nav a.cta{color:#ffffff;background:#ff6b6b;padding:8px 12px;border-radius:10px;font-weight:600}
+
+    .hero{background:var(--card);border-radius:var(--radius);padding:28px;display:grid;grid-template-columns:1fr 420px;gap:24px;align-items:center;box-shadow:0 4px 12px rgba(0,0,0,0.1)}
+    .hero h1{margin:0 0 8px;font-size:28px}
+    .hero p{margin:0 0 16px;color:var(--muted)}
+    .features{display:flex;gap:12px;flex-wrap:wrap}
+    .feature{background:var(--glass);padding:10px 12px;border-radius:10px;color:var(--muted);font-size:14px}
+    .shop-btn{display:inline-block;margin-top:12px;background:var(--accent);color:#ffffff;padding:10px 14px;border-radius:12px;font-weight:700;text-decoration:none}
+
+    .card-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:20px}
+    .card{background:var(--glass);padding:14px;border-radius:12px}
+    .card img{width:100%;height:160px;object-fit:cover;border-radius:8px}
+    .card h3{margin:10px 0 6px;font-size:16px}
+    .card p{margin:0;color:var(--muted);font-size:13px}
+
+    section{margin-top:26px}
+    .two-col{display:grid;grid-template-columns:1fr 380px;gap:22px}
+    .about-card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 4px 8px rgba(0,0,0,0.1)}
+    .services-list{display:flex;flex-direction:column;gap:10px}
+    .service-item{background:var(--glass);padding:12px;border-radius:10px}
+
+    .gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+    .gallery img{width:100%;height:120px;object-fit:cover;border-radius:8px}
+
+    footer{margin-top:30px;color:var(--muted);text-align:center}
+
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr}
+      .two-col{grid-template-columns:1fr}
+      .card-grid{grid-template-columns:repeat(2,1fr)}
+      .gallery{grid-template-columns:repeat(2,1fr)}
+      nav a{margin-left:10px}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo">VT</div>
+        <div>
+          <div style="font-weight:700">The Vibe Thread</div>
+          <div style="font-size:12px;color:var(--muted)">Wear Your Vibe</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a class="cta" href="#shop">Shop</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div>
+          <h1>Interactive t‑shirts for teens — QR & AR prints</h1>
+          <p>Affordable, limited‑edition t‑shirts that unlock stories, videos, and AR experiences. Designed by teens, for teens. Prices ₹600–₹900.</p>
+          <div class="features">
+            <div class="feature">QR codes with hidden content</div>
+            <div class="feature">AR prints that come alive</div>
+            <div class="feature">Personalized drops</div>
+            <div class="feature">College pop‑ups & bulk orders</div>
+          </div>
+          <a class="shop-btn" href="#shop">Explore Drops</a>
+
+          <div class="card-grid">
+            <div class="card">
+              <img src="https://images.unsplash.com/photo-1600180758895-dae85e0f22c5?crop=entropy&cs=tinysrgb&fit=max&h=160&w=400" alt="Tee 1">
+              <h3>Vibe Wave</h3>
+              <p>AR animated wave + hidden message via QR.</p>
+            </div>
+            <div class="card">
+              <img src="https://images.unsplash.com/photo-1618223875545-62745b682e6e?crop=entropy&cs=tinysrgb&fit=max&h=160&w=400" alt="Tee 2">
+              <h3>Neon Echo</h3>
+              <p>Glow‑in‑design with an AR reveal.</p>
+            </div>
+            <div class="card">
+              <img src="https://images.unsplash.com/photo-1604607723427-c134e30faed7?crop=entropy&cs=tinysrgb&fit=max&h=160&w=400" alt="Tee 3">
+              <h3>Hidden Tag</h3>
+              <p>Secret message unlocked by QR scan.</p>
+            </div>
+          </div>
+        </div>
+
+        <aside style="padding:16px;background:rgba(255,255,255,0.1);border-radius:12px">
+          <h3 style="margin:0 0 8px">Why interactive tees?</h3>
+          <p style="color:var(--muted);font-size:14px">Make your t‑shirt more than fabric—it's a story. Scan a QR for exclusive content or point your phone for AR effects that animate your design.</p>
+
+          <div style="margin-top:12px">
+            <strong style="display:block">Launch Plan</strong>
+            <ol style="color:var(--muted);padding-left:18px;margin:8px 0 0">
+              <li>Month 1 — Instagram launch + first drop</li>
+              <li>Month 2 — College pop‑ups</li>
+              <li>Month 3 — Website launch + influencer collabs</li>
+            </ol>
+          </div>
+        </aside>
+      </section>
+
+      <section id="about" class="two-col">
+        <div class="about-card">
+          <h2>About The Vibe Thread</h2>
+          <p style="color:var(--muted)">The Vibe Thread is a youth‑run brand that blends fashion and storytelling. Our t‑shirts feature QR and AR prints so every shirt can unlock a memory, a surprise, or an interactive art piece.</p>
+
+          <h3 style="margin-top:12px">Mission</h3>
+          <p style="color:var(--muted)">To deliver trendy, tech‑enabled clothing at teen‑friendly prices (₹600–₹900) while keeping designs fresh and limited.</p>
+        </div>
+
+        <div class="about-card">
+          <h3>Highlights</h3>
+          <div class="services-list">
+            <div class="service-item"><strong>Interactive Fashion</strong><div style="color:var(--muted);font-size:13px">QR codes unlock exclusive content like videos, playlists, and secret messages.</div></div>
+            <div class="service-item"><strong>Personalized Drops</strong><div style="color:var(--muted);font-size:13px">Custom names, dates, and event tees for batches and limited editions.</div></div>
+            <div class="service-item"><strong>Teen‑Friendly Pricing</strong><div style="color:var(--muted);font-size:13px">Quality tees within ₹600–₹900 range.</div></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="services">
+        <h2>Services</h2>
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:12px">
+          <div class="card">
+            <h3>Custom Drops</h3>
+            <p style="color:var(--muted)">Order limited runs with personalized prints for colleges and events.</p>
+          </div>
+          <div class="card">
+            <h3>AR Experiences</h3>
+            <p style="color:var(--muted)">Partner with us to build AR scenes that play when you point your phone at the tee.</p>
+          </div>
+          <div class="card">
+            <h3>QR Content Creation</h3>
+            <p style="color:var(--muted)">We help create exclusive content — videos, playlists, secret messages — that live behind your QR code.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="gallery">
+        <h2>Gallery — Sample Designs</h2>
+        <div class="gallery" style="margin-top:8px">
+          <img src="https://images.unsplash.com/photo-1600180758895-dae85e0f22c5?crop=entropy&cs=tinysrgb&fit=max&h=120&w=300" alt="Design A">
+          <img src="https://images.unsplash.com/photo-1618223875545-62745b682e6e?crop=entropy&cs=tinysrgb&fit=max&h=120&w=300" alt="Design B">
+          <img src="https://images.unsplash.com/photo-1604607723427-c134e30faed7?crop=entropy&cs=tinysrgb&fit=max&h=120&w=300" alt="Design C">
+          <img src="https://images.unsplash.com/photo-1598970434795-0c54fe7c0645?crop=entropy&cs=tinysrgb&fit=max&h=120&w=300" alt="Design D">
+        </div>
+
+        <p style="color:var(--muted);margin-top:10px">Note: These are placeholders. When ready, provide your final artwork or we can help mock up AR assets.</p>
+      </section>
+
+      <section id="shop" style="margin-top:22px">
+        <h2>Shop Preview</h2>
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:12px">
+          <div class="card">
+            <img src="https://images.unsplash.com/photo-1600180758895-dae85e0f22c5?crop=entropy&cs=tinysrgb&fit=max&h=240&w=400" alt="Vibe Wave">
+            <h3>Vibe Wave — ₹699</h3>
+            <p style="color:var(--muted)">Limited drop — AR animation + QR surprise.</p>
+            <button style="margin-top:8px;padding:8px 10px;border-radius:10px;border:none;background:var(--accent);color:#ffffff;font-weight:700">Add to Cart</button>
+          </div>
+
+          <div class="card">
+            <img src="https://images.unsplash.com/photo-1618223875545-62745b682e6e?crop=entropy&cs=tinysrgb&fit=max&h=240&w=400" alt="Neon Echo">
+            <h3>Neon Echo — ₹749</h3>
+            <p style="color:var(--muted)">Glow design with AR reveal.</p>
+            <button style="margin-top:8px;padding:8px 10px;border-radius:10px;border:none;background:var(--accent);color:#ffffff;font-weight:700">Add to Cart</button>
+          </div>
+
+          <div class="card">
+            <img src="https://images.unsplash.com/photo-1604607723427-c134e30faed7?crop=entropy&cs=tinysrgb&fit=max&h=240&w=400" alt="Hidden Tag">
+            <h3>Hidden Tag — ₹649</h3>
+            <p style="color:var(--muted)">Secret messages via QR codes.</p>
+            <button style="margin-top:8px;padding:8px 10px;border-radius:10px;border:none;background:var(--accent);color:#ffffff;font-weight:700">Add to Cart</button>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <div>© The Vibe Thread — Wear Your Vibe • Designed for teens • Prices ₹600–₹900</div>
+      <div style="font-size:13px;color:var(--muted);margin-top:6px">QR & AR integration examples available on request. Contact us to create custom drops for colleges and events.</div>
+    </footer>
+  </div>
+</body>
+</html>
